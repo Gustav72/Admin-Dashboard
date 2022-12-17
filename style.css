@@ -1,0 +1,21 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: #16213E;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.sidebar {
+    background-color: #E94560;
+    color: white;
+    grid-column: 1 / 2;
+}
+
+.main {
+    grid-column: 2 / 5;
+}
+
+.side-img {
+    height: 25px;
+}
