@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     display: grid;
     grid-template-columns: 1fr 4fr;
     background-color: #16213E;
@@ -12,10 +13,107 @@ body {
     grid-column: 1 / 2;
 }
 
-.main {
-    grid-column: 2 / 5;
+
+.sidebar div {
+    padding-left: 20px;
+    display: grid;
 }
 
-.side-img {
+
+.main {
+    grid-column: 2 / 4;
+
+}
+
+.icon{
     height: 25px;
+    width: auto;
+}
+
+.top {
+    height: 150px;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    background-color: #0F3460;
+    grid-auto-flow: column;
+
+}
+
+#search {
+    grid-row: 1 / 2;
+    display: flex;
+    grid-auto-flow: column;
+
+}
+
+#hello {
+    grid-row: 2 / 3;
+    display: flex;
+}
+
+.top:last-child > * {
+        grid-row: 1;
+}
+
+img {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+#searchbar {
+    background-color: white;
+    width: 500px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.card {
+    width: 300px;
+    height: auto;
+    background-color: #0F3460;
+    border-radius: 20px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    
+}
+
+.projects {
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+
+}
+
+.announcements {
+    font-size: .9rem;
+    border-radius: 20px;
+    background-color: #0F3460;
+    width: 250px;
+    grid-column: 2 / 3;
+
+}
+
+.trending {
+    font-size: .9rem;
+    border-radius: 20px;
+    background-color: #0F3460;
+    width: 250px;
+    grid-column: 2 / 3;
+}
+
+#your-projects {
+    position: absolute;
+}
+
+#announcements-text {
+    position: absolute;
+}
+
+#trending-text {
+    position: absolute;
 }
