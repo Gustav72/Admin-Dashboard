@@ -3,25 +3,46 @@ body {
     grid-template-columns: 1fr 4fr;
     background-color: #16213E;
     color: white;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    height: 97vh;
+
 }
 
 .sidebar {
     background-color: #E94560;
     color: white;
     grid-column: 1 / 2;
+    height: 100%;
+    padding-top: 30px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+    padding-bottom: auto;
+
 }
 
 
 .sidebar div {
     padding-left: 20px;
-    display: grid;
+    display: flex;
+    align-content: center;
+
+}
+
+.sidebar div img {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+}
+
+#dashboard-icon {
+    height: 2rem;
+    margin-right: 10px;
 }
 
 
 .main {
     grid-column: 2 / 4;
-
 }
 
 .icon{
@@ -68,8 +89,6 @@ img {
 }
 
 .card {
-    width: 500px;
-    height: auto;
     background-color: #0F3460;
     border-radius: 20px;
     padding: 20px;
@@ -85,46 +104,76 @@ img {
 .projects {
     grid-column: 1 / 2;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1fr, 200px));
-    gap: 20px 20px;
-    padding: 20px;
-    margin-top: 80px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    padding: 40px;
+    margin-top: 30px;
+
 
 }
 
 .announcements {
     font-size: .9rem;
-    border-radius: 20px;
-    background-color: #0F3460;
-    width: 250px;
     grid-column: 2 / 3;
     justify-self: center;
+    padding-top: 0;
+    margin-top: 70px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+}
+
+.top-announcements {
+    border-radius: 20px;
+    background-color: #0F3460;
     padding: 20px;
     padding-top: 0;
-    height: 600px;
-    margin-top: 100px;
-
 }
 
 .trending {
     font-size: .9rem;
     border-radius: 20px;
     background-color: #0F3460;
-    width: 250px;
     padding: 20px;
-    margin-top: 100px;
-    margin-left: -20px;
-
+    margin-top: auto;
+    margin-bottom: auto;
 }
+
+.trending a {
+    text-decoration: none;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.trending div {
+    align-items: center;
+    
+}
+.trending img {
+    margin: 10px;
+}
+
+
 
 #your-projects {
     position: absolute;
+    font-size: 1.7rem;
+    font-weight: 900;
+    top: 150px;
 }
 
 #announcements-text {
     position: absolute;
+    font-size: 1.7rem;
+    font-weight: 900;
+    top: 150px;
 }
 
 #trending-text {
-    position: absolute;
+    font-size: 1.7rem;
+    font-weight: 900;
+    top: 700px;
+    margin-bottom: 10px;
 }
