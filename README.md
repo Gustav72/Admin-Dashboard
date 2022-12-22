@@ -2,7 +2,7 @@
 
 Project from [The Odin Project](https://www.theodinproject.com/)
 
-## [Live Demo](https://gustav72.github.io/Taco-Form/)
+## [Live Demo](https://gustav72.github.io/Admin-Dashboard/)
 
 ### Technologies Used
 
@@ -14,6 +14,6 @@ Project from [The Odin Project](https://www.theodinproject.com/)
 
 ### Overview
 
-![Screenshot of User Interface](./Screenshot.png)
+![Screenshot of User Interface](./images/screenshot.png)
 
-This admin dashboard exhibits the use of CSS Grid and Flexbox to properly place HTML elements and to respond to changes of viewport sizes.
+This admin dashboard exhibits the use of responsive CSS Grid and Flexbox to properly place HTML elements and to respond to changes of viewport sizes.
